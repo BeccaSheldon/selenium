@@ -18,7 +18,7 @@ describe "Login as a Customer" do
     @verification_errors.should == []
   end
   
-  it "comp_login_test" do
+  it "tests if Customers can login to dashboard" do
     @driver.get "http://crowdflower.com/"
     (@driver.title).should == "CrowdFlower | The World's Leading Crowdsourcing Service."
     @driver.find_element(:link, "Login").click
