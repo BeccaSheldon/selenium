@@ -1,0 +1,28 @@
+// Place all the styles related to the auto_ops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/////////////////////////////////////////////////////////////
+// MIXINS
+/////////////////////////////////////////////////////////////
+
+.blue_button{
+	@extend .button;
+	@extend .radius;
+	@extend .small;
+	width: 100%;
+	background-color: blue; 
+	a{
+		color: white;
+	}
+}
+
+.pink_button{
+	@extend .blue_button;
+	background-color: pink;
+}
+
+.green_button{
+	@extend .blue_button;
+	background-color: green;
+}

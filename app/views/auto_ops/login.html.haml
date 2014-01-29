@@ -1,0 +1,32 @@
+%section.nav
+  .row.header
+    .columns.large-12
+      %h1 DevOps Integration Testing
+    .columns.large-12
+      %h4 This (very beta) app automates integration tests for 3 functions on the CrowdFlower website:
+      %ul
+        %li Customer Login 
+        %li Customer Login + Create a Demographic Survery Job from Template
+        %li Customer Login + Create a Simple Job from Scratch
+
+%br/
+
+%section.testing_apps_list
+  .row
+    .columns.large-12
+      Click a button below to run automated tests for Customer functions:
+%br/
+
+/ Each button should make correlating test run 
+.row
+  .columns.large-4
+    .blue_button  
+      %a{href: 'login_url_path'} Login
+  .columns.large-4
+    .pink_button
+      %a{href: '#'} Login + Create Job From Template
+  .columns.large-4
+    .green_button 
+      %a{href: '#'} Login + Create Job From Template
+
+

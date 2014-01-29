@@ -1,4 +1,7 @@
 Selenium::Application.routes.draw do
+  root "auto_ops#login"
+  get "auto_ops/make_job"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
